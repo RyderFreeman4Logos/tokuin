@@ -104,6 +104,7 @@ markdown = ["pulldown-cmark"]
 gemini = []  # Gemini works without sentencepiece (uses approximation)
 # For exact Gemini tokenization, enable sentencepiece: gemini-sentencepiece = ["sentencepiece"]
 gemini-sentencepiece = ["sentencepiece"]
+conservative = ["openai"]
 load-test = ["tokio", "reqwest", "async-trait", "indicatif", "hdrhistogram", "serde_yaml", "fastrand"]
 compression = ["strsim", "regex", "chrono", "uuid"]
 compression-embeddings = ["compression", "tokenizers", "dirs", "ort", "ndarray", "num_cpus", "load-test"]

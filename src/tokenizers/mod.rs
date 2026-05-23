@@ -7,6 +7,9 @@ pub mod openai;
 #[cfg(feature = "gemini")]
 pub mod gemini;
 
+#[cfg(feature = "conservative")]
+pub mod conservative;
+
 pub use trait_impl::Tokenizer;
 
 #[cfg(feature = "openai")]
@@ -14,3 +17,6 @@ pub use openai::OpenAITokenizer;
 
 #[cfg(feature = "gemini")]
 pub use gemini::GeminiTokenizer;
+
+#[cfg(feature = "conservative")]
+pub use conservative::ConservativeTokenizer;
